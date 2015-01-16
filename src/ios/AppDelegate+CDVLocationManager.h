@@ -18,6 +18,7 @@
  */
 
 #import "AppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate (CDVLocationManager)
 
@@ -25,4 +26,5 @@
 
 - (BOOL) xxx_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
+- (void) locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region;
 @end

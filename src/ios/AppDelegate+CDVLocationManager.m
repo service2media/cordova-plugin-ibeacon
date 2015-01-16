@@ -79,5 +79,11 @@
     }];
 }
 
+/*
+ A stub. When a beacon starts the app from scratch (as opposed to when running in the background),
+ the implementation of this protocol on the app delegate is checked before
+ applicationdDidFinishLaunching is reached */
+- (void) locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region {
+}
 
 @end
